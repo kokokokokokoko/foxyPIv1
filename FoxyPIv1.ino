@@ -98,6 +98,9 @@ void setup()   {
   //comparator init
   pinMode(ain0Pin, INPUT);//AIN0 -> input
   pinMode(ain1Pin, INPUT);//AIN1 -> input
+  // info, dealing with bytes on arduino.
+  // https://forum.arduino.cc/index.php?topic=561741.0 
+  // https://arduino.stackexchange.com/questions/58701/testing-conditions-on-port-bytes-ignoring-certain-bits
   ACSR = 0b00000000;
   ADCSRA = 0b10000000;
   ADCSRB = 0b00000000;
